@@ -1,5 +1,7 @@
 library(plumber)
 
+source("helpers/helper_functions.R")
+
 #* @apiTitle Plumber Example API
 
 #' @plumber

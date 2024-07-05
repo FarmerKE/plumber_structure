@@ -1,7 +1,7 @@
 #* Echo back the input
 #* @param msg The message to echo
 #* @get /echo
-function(msg=""){
+function(msg = "") {
   tryCatch(
     expr = {
       list(msg = paste0("The message is: '", msg, "'"))
@@ -18,7 +18,7 @@ function(msg=""){
 #* Plot a histogram
 #* @serializer png
 #* @get /plot
-function(){
+function() {
   tryCatch(
     expr = {
       rand <- rnorm(100)

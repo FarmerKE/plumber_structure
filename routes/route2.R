@@ -2,7 +2,7 @@
 #* @param a:double The first number to add
 #* @param b:double The second number to add
 #* @post /sum
-function(a, b){
+function(a, b) {
   tryCatch(
     expr = {
       as.numeric(a) + as.numeric(b)
