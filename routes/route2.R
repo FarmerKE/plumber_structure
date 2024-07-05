@@ -3,5 +3,15 @@
 #* @param b The second number to add
 #* @post /sum
 function(a, b){
-  as.numeric(a) + as.numeric(b)
+  tryCatch(
+    expr = {
+      as.numeric(a) + as.numeric(b)
+    }, error = function(e) {
+      log_function(
+        message = e$message,
+        level = 3,
+        tag = "/routes2/sum"
+      )
+    }
+  )
 }
